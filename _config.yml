@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "Maxim Romanov"
 description              : "Reading Traditional Sources with Nontraditional Methods"
 baseurl                  : ""
-url                      : "http://alraqmiyyat.github.io"
+url                      : "https://alraqmiyyat.github.io"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false # true, false (default)
