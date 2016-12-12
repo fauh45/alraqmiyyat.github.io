@@ -7,20 +7,20 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "al-Raqmiyyāt: Digital Islamic History"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+name                     : "Maxim Romanov"
+description              : "Reading Traditional Sources with Nontraditional Methods"
+baseurl                  : ""
+url                      : "http://alraqmiyyat.github.io"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : alraqmiyyat
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -55,9 +55,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : maximromanov
 facebook:
-  username               :
+  username               : maxim.romanov.925
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -77,19 +77,19 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  name             : "Maxim Romanov"
+  avatar           : "/images/personal/RM_600.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Research fellow (PhD in Near Eastern Studies, U of Michigan, 2013) at the Humboldt Chair for Digital Humanities [Institut für Informatik], Leipzig University. He studies Islamic historical texts with computational methods, currently focusing on the analysis of multivolume biographical and bibliographical collections."
+  location         : "Leipzig, Germany"
+  email            : "romanov.maxim@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "maxim.romanov.925"
   foursquare       :
-  github           :
+  github           : "maximromanov"
   google_plus      :
   keybase          :
   instagram        :
@@ -100,7 +100,7 @@ author:
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "maximromanov"
   vine             :
   weibo            :
   xing             :
@@ -171,7 +171,8 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: pretty
+permalink: /:year/:month-:day.html
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -230,7 +231,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -241,6 +241,13 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
