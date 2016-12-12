@@ -13,8 +13,9 @@ $paragraph-indent           : false !default; // true, false (default)
 $indent-var                 : 1.3em !default;
 
 /* system typefaces */
-$serif                      : Georgia, Times, serif !default;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$serif                      : Baskerville, Brill, Georgia, Times, serif !default;
+$sans-serif                 : Baskerville, Brill, Georgia, Times, serif !default;
+/*$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;*/
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
@@ -28,8 +29,8 @@ $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
 
-$global-font-family         : $sans-serif !default;
-$header-font-family         : $sans-serif !default;
+$global-font-family         : $serif !default;
+$header-font-family         : $serif !default;
 $caption-font-family        : $serif !default;
 
 /* type scale */
@@ -90,7 +91,7 @@ $xing-color                 : #006567 !default;
 
 
 /* links */
-$link-color                 : $info-color !default;
+$link-color                 : #cc0000 !default;
 $link-color-hover           : mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 $masthead-link-color        : $primary-color !default;
