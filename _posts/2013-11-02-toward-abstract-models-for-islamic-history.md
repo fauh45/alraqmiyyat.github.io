@@ -1,9 +1,9 @@
 ---
-title:		Toward Abstract Models for Islamic History
-author:		Maxim Romanov
-layout:		post
-image:		/images/loc_photos/baghdad_16004_d.jpg
-imagecredit:  "Iraq. (Mesopotamia). Baghdad. Views, street scenes, and types. The Katah Bridge. Over the Tigris River looking North. 1932 <a href='http://www.loc.gov/pictures/item/mpc2010001646/PP/' target='_blank'>(Library of Congress, LC-DIG-matpc-16149)</a>"
+excerpt: "The advent of digital humanities has brought the notion of “big data” into the purview of humanistic inquiry. Humanists now have access to huge corpora that open research possibilities that were unthinkable a decade or two ago. However, working with corpora requires a rather different approach that is more characteristic of sciences than humanities. Namely, one has to be transparent and explicit with regard to how data are extracted and how they are analyzed. Text-mining techniques rely on explicit algorithms because they help tracing mistakes, correcting them and, ultimately, improving results."
+header:
+  image: /images/covers/07391u.jpg
+  caption: "**Photo credit**: Iraq. Kerbela [i.e., Karbala]. General view, mosque. *Library of Congress*, [LC-DIG-matpc-07391](http://hdl.loc.gov/loc.pnp/matpc.07391)"
+title:		"Toward Abstract Models for Islamic History"
 categories:
   - Methods
   - Biographies
@@ -11,8 +11,8 @@ categories:
   - Taʾriḫ al-islām
 tags:
   - Blogpost
-  - al-Dhahabī
-  - Ta’rīkh al-islām
+  - al-Ḏahabī
+  - Taʾrīḫ al-islām
   - Computational reading
   - Islamic world
   - Longue durée
@@ -21,7 +21,7 @@ tags:
 * * *
 
 <p style="text-align: center;">
-  <strong>NB</strong>: the paper has been presented @ <a href="http://islamichumanities.org/conference2013/">Digital Humanities and Islamic & Middle Eastern Studies</a>, Brown University, Providence, RI (October 24-25, 2013); the video recording of the presentation is available @ <a href="http://mediacapture.brown.edu:8080/ess/echo/presentation/5da9b95b-c4d1-41e4-9f29-7516d2e4af18">www.islamichumanities.org > Day One</a> (timestamp of the presentation <strong>2:48:00</strong>; Q&A: <strong>3:51:30</strong>); the entire paper is also <a href="http://www.academia.edu/4922009/_Toward_Abstract_Models_for_Islamic_History_working_paper_">available as a PDF</a>
+  <strong>NB</strong>: the paper has been presented @ <a href="http://islamichumanities.org/conference2013/">Digital Humanities and Islamic *&* Middle Eastern Studies</a>, Brown University, Providence, RI (October 24-25, 2013); the video recording of the presentation is available @ <a href="http://mediacapture.brown.edu:8080/ess/echo/presentation/5da9b95b-c4d1-41e4-9f29-7516d2e4af18">www.islamichumanities.org > Day One</a> (timestamp of the presentation <strong>2:48:00</strong>; Q*&*A: <strong>3:51:30</strong>); the entire paper is also <a href="http://www.academia.edu/4922009/_Toward_Abstract_Models_for_Islamic_History_working_paper_">available as a PDF</a>
 </p>
 
 * * *
@@ -47,7 +47,7 @@ The detailed discussion of main assumptions regarding these types of data as wel
 *Taʾrīkh al-islām* is the largest Arabic biographical collection that includes over 30, 000 biographies and covers almost seven centuries of Islamic history. The current dataset includes information on slightly over 29, 000 individuals (the first three volumes of *Taʾrīkh al-islām* are structured differently from the rest of the collection and cannot be studied with the same computational method). Figure <b>1</b> shows cumulative biographical graphs and curves based on this data set. Biographies are grouped into 20 lunar year periods (quantities of biographies for each period are shown at the bottom of the <i>Biographical graph</i>). The graph is transformed into a curve that smooths out the noise of data, emphasizing larger trends (*Smoothed Biographical Curve*). Finally, the main curve is the *Adjusted Biographical Curve*, which is shifted 30 years back in time to reflect “the years of floruit” of the biographees from *Taʾrīkh al-islām*.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/TI_UpdCumulativeCurve.jpg" title=""><img src="{{ site.url }}/images/TI_UpdCumulativeCurve.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_UpdCumulativeCurve.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_UpdCumulativeCurve.jpg"></a>
 	<figcaption><em><b>Figure 1.</b> Cumulative Biographical Curve. The row of numbers shows the quantities of biographies per 20 lunar year periods, beginning with 41-60 AH/662-681 CE and up to 680-700 AH/1282-1301 CE.</em></figcaption>
 </figure>
 
@@ -70,11 +70,11 @@ The list of “descriptive names” from *Taʾrīkh al-islām* is based on frequ
 
 
 <figure class="half">
-	<a href="{{ site.url }}/images/NamesScheme1.jpg" title=""><img src="{{ site.url }}/images/NamesScheme1.jpg"></a>
-	<a href="{{ site.url }}/images/NamesScheme2.jpg" title=""><img src="{{ site.url }}/images/NamesScheme2.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/NamesScheme1.jpg" title=""><img src="{{ site.url }}/images/tamfih/NamesScheme1.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/NamesScheme2.jpg" title=""><img src="{{ site.url }}/images/tamfih/NamesScheme2.jpg"></a>
 </figure>
 <figure class="fit">
-	<a href="{{ site.url }}/images/NamesLayer2.jpg" title=""><img src="{{ site.url }}/images/NamesLayer2.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/NamesLayer2.jpg" title=""><img src="{{ site.url }}/images/tamfih/NamesLayer2.jpg"></a>
 	<figcaption>
 		<b>Figures 2, 4, 3 (Order: Left-to-Right, Top-to-Bottom):</b>
 		<b>Figure 2.</b> Interconnectedness of Descriptive Names from the Individual Perspective.
@@ -92,7 +92,7 @@ The outermost layer represents the major sectors to which a person could belong 
 For our purposes it will be more efficient to invert this scheme so that “descriptive names” are presented from the social perspective (Figure <b>4</b>). Now, each category contributes to the composition of Islamic society, and every “descriptive name” can be seen as a social role. These roles are likely to receive a centripetal charge from individuals who attempt to expand their influence on society at large; how close they get to the center—i.e., how much social influence they can exercise—would depend on the success of particular individuals and/or historical circumstances that might be favorable to particular groups. Social influence here is understood broadly as a pressure that forces someone to do something that s/he otherwise would not have done; at this point I do not make a distinction between physical threats and social pressures. Clearly, the sword of an <i>amīr</i>, “military commander, ” and the word of a <i>shaykh</i>, “religious authority, ” are different in their nature, but both may have equally serious societal consequences.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/Names_Examples_14.jpg" title=""><img src="{{ site.url }}/images/Names_Examples_14.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/Names_Examples_14.jpg" title=""><img src="{{ site.url }}/images/tamfih/Names_Examples_14.jpg"></a>
 	<figcaption><b>Figure 5.</b> <i>Nisba</i> Classification Examples (a).</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ For our purposes it will be more efficient to invert this scheme so that “desc
 Figures <b>5</b> *&* <b>6</b> should provide a visual clue to how these overlapping categories are used in the classification scheme. On Figure <b>5</b>: <i>amīr</i>, “governor, commander, ” and <i>sulṭān</i>, “sultan, ” both belong to the <b>milit</b>ary sector of society. <i>Amīr</i> can be seen primarily as a <b>posit</b>ion—in a sense that there is somebody above who granted this <b>posit</b>ion to a given individual; arguably, this <b>posit</b>ion provides one with a relatively high <b>statu</b>s. <i>Sulṭān</i> is the apex of the <b>milit</b>ary hierarchy and thus is primarily seen as <b>statu</b>s with significant influence over all other sectors. <i>Kātib</i>, “scribe, ” and <i>wazīr</i>, “vizier, prime minister, ” belong to the <b>admin</b>istrative sector, where the former is a <b>posit</b>ion with potential for social influence, while the latter is the apex of the <b>admin</b>istrative hierarchy, which gives one significant resources to influence society at large—hence, it is also <b>statu</b>s.<sup><a href="#footnote_12_918" id="identifier_12_918" class="footnote-link footnote-identifier-link" title="Some wazīrs rivaled their &lsquo;&lsquo;employers&rdquo; in influence. The most prominent examples are the Barmakid family that served the ʿAbbāsid caliphs and Niẓām al-mulk who served Mālikshāh, the Great Saljuq sulṭān.">13</a></sup> Somewhat an equivalent to <i>amīr</i>, <i>raʾīs</i>, “chief, director, ” is a denomination of high <b>statu</b>s in either the <b>civil</b>ian, the <b>relig</b>ious or the <b>admin</b>istrative sector (also <b>posit</b>ion in the latter). <i>Ṭabīb</i>, “physician, ” stands for special training—<b>knowl</b>edge—within the <b>civil</b>ian sector, which is also likely to fall into the categories of <b>trade</b> and <b>posit</b>ion, especially after hospitals (sing. <i>bimaristān</i>) become a constant element of the Muslim cityscape.<sup><a href="#footnote_13_918" id="identifier_13_918" class="footnote-link footnote-identifier-link" title="There are 322 physicians in the ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ of Ibn Abī Uṣaybiʿa (d. 668/1270&nbsp;CE) and quite a few physicians are Jews and Christians, judging by their names. al-Dhahabī&rsquo;s count of physicians is about 200 which can be considered a very thorough coverage, since Ibn Abī Uṣaybiʿa&rsquo;s book is devoted exclusively to the physicians (and as it often happens, tends too overstretch the definition of the group), while al-Dhahabī&rsquo;s book is a general history.">14</a></sup> <i>Qaṭṭān</i>, “producer or seller of cotton, ” and <i>qawwās</i>, “bow-maker, ” are both secular occupations—<b>trade</b>s—and thus belong to the <b>civil</b>ian sector, although the latter—if bows are produced for war-making purposes—may cross into the <b>milit</b>ary one.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/Names_Examples_24.jpg" title=""><img src="{{ site.url }}/images/Names_Examples_24.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/Names_Examples_24.jpg" title=""><img src="{{ site.url }}/images/tamfih/Names_Examples_24.jpg"></a>
 	<figcaption><b>Figure 6.</b> <i>Nisba</i> Classification Examples (b).</figcaption>
 </figure>
 
@@ -113,8 +113,8 @@ Individuals in the Islamic biographical dictionaries usually wear many turbans a
 Introducing the categories of sectors—<b>milit</b>ary, <b>admin</b>istrative, <b>relig</b>ious and <b>civil</b>ian—I hope to use them as markers of change within the composition of Islamic élites. Society would remain healthier when more social groups are represented in the élites, since a more diverse population will be participating in the [re]negotiation of the rules of the game. This is what the share and the diversity of the civilian sector—with a number of trades, crafts and knowledge[s]—is meant to represent.
 
 <figure class="half">
-	<a href="{{ site.url }}/images/TI_BiosMajorSectors_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_BiosMajorSectors_ABS.jpg"></a>
-	<a href="{{ site.url }}/images/TI_BiosMajorSectors_REL.jpg" title=""><img src="{{ site.url }}/images/TI_BiosMajorSectors_REL.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_BiosMajorSectors_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_BiosMajorSectors_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_BiosMajorSectors_REL.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_BiosMajorSectors_REL.jpg"></a>
 	<figcaption><b>Figure 7.</b> Major Sectors of Islamic Society (as represented in <i>Taʾrīkh al-islām</i>)</figcaption>
 </figure>
 
@@ -130,15 +130,15 @@ The administrative and military sectors are not as significant in terms of numbe
 ## Major Social Transformations
 
 <figure class="half">
-	<a href="{{ site.url }}/images/TI_Bios_TribATop_CAT_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Bios_TribATop_CAT_ABS.jpg"></a>
-	<a href="{{ site.url }}/images/TI_Bios_TribATop_CAT_REL.jpg" title=""><img src="{{ site.url }}/images/TI_Bios_TribATop_CAT_REL.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Bios_TribATop_CAT_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Bios_TribATop_CAT_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Bios_TribATop_CAT_REL.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Bios_TribATop_CAT_REL.jpg"></a>
 	<figcaption><b>Figure 8.</b> Individuals with Tribal and Toponymic <i>Nisba</i>s in <i>Taʾrīkh al-islām</i>.</figcaption>
 </figure>
 
 **De-tribalization** is one of the most striking processes that the onomastic data show. Islamic society starts as a tribal society with up to 85% of individuals in the earliest periods qualified through tribal affiliations. As the Islamic community grows and spreads over the Middle East and North Africa, the number of individuals with tribal identities rapidly goes down (Figure <b>8</b>) and by about 350/962 CE only 20-25% of the individuals in the *Taʾrīkh al-islām* have tribal affiliations. From this point on—perhaps even earlier—tribal affiliations persevere in different capacities: some as dynastic (most prominently, the <i>nisba</i> al-Umawī that spikes again after 350/962 CE in Andalusia), but in most cases as status markers.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/00000876_AnSAry_TAGS_TRIBAL_PROPHET_ABS.jpg" title=""><img src="{{ site.url }}/images/00000876_AnSAry_TAGS_TRIBAL_PROPHET_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/00000876_AnSAry_TAGS_TRIBAL_PROPHET_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/00000876_AnSAry_TAGS_TRIBAL_PROPHET_ABS.jpg"></a>
 	<figcaption><b>Figure 9.</b> Individuals with <i>nisba</i> al-Anṣārī in <i>Taʾrīkh al-islām</i>. Although al-Anṣār, “The Helpers [of the Prophet], ” are not exactly a tribe, this group, being a product of the tribal society of Arabia, in many ways functioned as such.</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ The administrative and military sectors are not as significant in terms of numbe
 Such <i>nisba</i>s as al-Anṣārī (Figure <b>9</b>) and al-Qurashī (Figure <b>10</b>) make quite a noticeable comeback. The numbers of al-Anṣārīs (this <i>nisba</i> is particularly frequent in Andalusia as well) begin to grow quite rapidly after 350/962 CE and the number of al-Qurashīs practically skyrockets right after 500/1107 CE. However, even though their absolute numbers are much higher in the later periods, their percentages never reach their early peaks: the highest peak of al-Anṣārīs in the earliest periods is 18.32%, while the highest one in the later periods is only 6.53%; with al-Qurashīs these numbers are 8.42% and 3.31%. Some other tribal <i>nisba</i>s are re-claimed as well, but the overall number of individuals with names that associate them with Arab tribes remains rather low, only briefly going above the 30% mark.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/00000625_qrEy_TAGS_TRIBAL_PROPHET_ABS.jpg" title=""><img src="{{ site.url }}/images/00000625_qrEy_TAGS_TRIBAL_PROPHET_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/00000625_qrEy_TAGS_TRIBAL_PROPHET_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/00000625_qrEy_TAGS_TRIBAL_PROPHET_ABS.jpg"></a>
 	<figcaption><b>Figure 10.</b> Individuals with <i>nisba</i> al-Qurashī in <i>Taʾrīkh al-islām</i>.</figcaption>
 </figure>
 
@@ -154,12 +154,12 @@ Such <i>nisba</i>s as al-Anṣārī (Figure <b>9</b>) and al-Qurashī (Figure 
 Most tribal <i>nisba</i>s display rather distinctive orientations toward the East or the West of the Islamic world. “Late bloomers” are most often oriented toward the West (Figure <b>11</b>). For example, such <i>nisba</i>s as al-Qaysī (208) and al-Lakhmī (183) feature most prominently in Andalusia (84 al-Qaysīs and 83 al-Lakhmīs); al-Tujībī (127)—in Andalusia (57) and Egypt (46); al-Makhzumī (182)—in Egypt (33);<sup><a href="#footnote_14_918" id="identifier_14_918" class="footnote-link footnote-identifier-link" title="The first major peak of the nisba al-Makhzūmī is around 150/768&nbsp;CE and geographically it peaks largely in the Central Arabian Cluster (65 al-Makhzūmīs).">15</a></sup> al-Saʿdī (191)—in Egypt (50) and Syria (25). But again, the percentages of “late bloomers” never reach those of the earlier periods.
 
 <figure class="half">
-	<a href="{{ site.url }}/images/qysy_TAGS_TRIBAL_00208_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/qysy_TAGS_TRIBAL_00208_MapOfConnections.jpg"></a>
-	<a href="{{ site.url }}/images/lxmy_TAGS_TRIBAL_00181_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/lxmy_TAGS_TRIBAL_00181_MapOfConnections.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/qysy_TAGS_TRIBAL_00208_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/tamfih/qysy_TAGS_TRIBAL_00208_MapOfConnections.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/lxmy_TAGS_TRIBAL_00181_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/tamfih/lxmy_TAGS_TRIBAL_00181_MapOfConnections.jpg"></a>
 </figure>
 <figure class="half">
-	<a href="{{ site.url }}/images/tjyby_TAGS_TRIBAL_00125_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/tjyby_TAGS_TRIBAL_00125_MapOfConnections.jpg"></a>
-	<a href="{{ site.url }}/images/mxzwmy_TAGS_TRIBAL_00181_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/mxzwmy_TAGS_TRIBAL_00181_MapOfConnections.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/tjyby_TAGS_TRIBAL_00125_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/tamfih/tjyby_TAGS_TRIBAL_00125_MapOfConnections.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/mxzwmy_TAGS_TRIBAL_00181_MapOfConnections.jpg" title=""><img src="{{ site.url }}/images/tamfih/mxzwmy_TAGS_TRIBAL_00181_MapOfConnections.jpg"></a>
 	<figcaption><b>Figure 11.</b> Western Orientation of Some Tribal “Late bloomers.” <b>NB</b>: Each map has its own scale.</figcaption>
 </figure>
 
@@ -167,7 +167,7 @@ Most tribal <i>nisba</i>s display rather distinctive orientations toward the Eas
 The change in tribal identities can also be seen through the numbers of unique tribal <i>nisba</i>s per period (Figure <b>12</b>). In general, they display a similar trend. At its highest the number of unique tribal <i>nisba</i>s fluctuates at around 115 during the period 100-200 AH/719-816 CE. It drops to about 60 by 500/1107 CE and then grows back to about 80—most likely through the re-appropriation of old tribal <i>nisba</i>s that are now used as status markers as well as through the introduction of Turkic and Kurdish tribal identities—but by the end of the main period this number goes down to the 60-70 range.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/TI_Bios_Unique_Tribal_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Bios_Unique_Tribal_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Bios_Unique_Tribal_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Bios_Unique_Tribal_ABS.jpg"></a>
 	<figcaption><b>Figure 12.</b> Unique tribal <i>nisba</i>s in <i>Taʾrīkh al-islām</i>.</figcaption>
 </figure>
 
@@ -176,8 +176,8 @@ The change in tribal identities can also be seen through the numbers of unique t
 The relative numbers in Figure <b>13</b> (right) allow for a more detailed glimpse into how the military were treated by the learned class who composed biographical collections that became sources of al-Dhahabī’s “History.” And the percentages tell a somewhat different story. Interestingly, the turning points of the military curve coincide with those of the cumulative biographical curve. The military curve, however, has three clearly visible sections, or periods. The first section, the early period up until 270/884 CE, shows the decline of the military in Islamic society. This process of de-militarization went on hand-in-hand with de-tribalization, during which the diversity of the Islamic community grew, the ethos changed and swords and horses were exchanged for pens and donkeys. 270/884 CE is the first peak of the cumulative biographical curve: the highest percentage of the learned and the lowest percentage of the military in the *Taʾrīkh al-islām*.
 
 <figure class="half">
-	<a href="{{ site.url }}/images/TI_BiosMilitarySector_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_BiosMilitarySector_ABS.jpg"></a>
-	<a href="{{ site.url }}/images/TI_BiosMilitarySector_REL.jpg" title=""><img src="{{ site.url }}/images/TI_BiosMilitarySector_REL.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_BiosMilitarySector_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_BiosMilitarySector_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_BiosMilitarySector_REL.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_BiosMilitarySector_REL.jpg"></a>
 	<figcaption><b>Figure 13.</b> The Military Sector in <i>Taʾrīkh al-islām</i>.</figcaption>
 </figure>
 
@@ -190,7 +190,7 @@ Military commanders do a lot to make a place for themselves in the dense social 
 The military—the <i>amīr</i>s themselves and members of their families<sup><a href="#footnote_17_918" id="identifier_17_918" class="footnote-link footnote-identifier-link" title="Most prominently, women from their households, see, Humphreys (1994).">18</a></sup>—are not the only ones building <i>madrasa</i>s and, judging by the frequencies of their mentions, their establishments are not the most prominent. However, they definitely compensate for this in numbers: there are significantly more endowments established by the military than by members of other groups.<sup><a href="#footnote_18_918" id="identifier_18_918" class="footnote-link footnote-identifier-link" title="See, for example: TI, 28, 311-312; TI, 29, 68-76; TI, 37, 57-58; TI, 37, 185-186; TI, 38, 157-158; TI, 39, 370-387; TI, 41, 161-164; TI, 42, 407; TI, 44, 220; TI, 45, 119; TI, 45, 164; TI, 45, 311-313; TI, 45, 359; TI, 45, 402-406; TI, 46, 87-88; TI, 46, 289; TI, 46, 431-432; TI, 47, 165; TI, 47, 308; TI, 49, 192; TI, 50, 264; TI, 51, 196-197; TI, 51, 369-370; TI, 52, 368; TI, 52, 409-411. On the military patronage, see also: Humphreys (1989).">19</a></sup> Figure <b>14</b> shows the curves of the most frequently mentioned <i>madrasa</i>s in *Taʾrīkh al-islām*. The vizieral al-Niẓāmiyyas and the caliphal al-Mustanṣiriyya feature more prominently. However, their curves strongly suggest that their prime time is over, while “military” <i>madrasa</i>s—al-Ẓāhiriyya, al-Amīniyya, al-Nāṣiriyya, al-Nūriyya, al-ʿĀdiliyya and al-Qaymariyya and others—are on the rise.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/TI_Words_SomeoftheMostProminentMadrasas_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Words_SomeoftheMostProminentMadrasas_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Words_SomeoftheMostProminentMadrasas_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Words_SomeoftheMostProminentMadrasas_ABS.jpg"></a>
 	<figcaption><b>Figure 14.</b> Mentions of Most Prominent <i>Madrasa</i>s.</figcaption>
 </figure>
 
@@ -198,15 +198,15 @@ The military—the <i>amīr</i>s themselves and members of their families<sup><a
 The “Fulān al-dīn” honorifics that in the earlier periods were reserved for religious scholars become very common among the military, while the old pattern of “Fulān al-dawla” practically disappears (see Figure <b>15</b>).<sup><a href="#footnote_19_918" id="identifier_19_918" class="footnote-link footnote-identifier-link" title="Somehow, the &lsquo;&lsquo;Fulān al-dīn&rdquo; names still have a strong steel aftertaste. The most common first components of the &lsquo;&lsquo;Fulān al-dawla&rdquo; pattern are Sayf al-dawla, &lsquo;&lsquo;Sword of the Dynasty;&rdquo; Nāṣir&hellip;, &lsquo;&lsquo;Helper&hellip;;&rdquo; Naṣr, &lsquo;&lsquo;Victory;&rdquo; Muʿizz, &lsquo;&lsquo;Strengthener;&rdquo; ʿIzz, &lsquo;&lsquo;Strength;&rdquo; ʿAḍud, &lsquo;&lsquo;Support;&rdquo; Tāj, &lsquo;&lsquo;Crown;&rdquo; Bahāʾ, &lsquo;&lsquo;Splendor;&rdquo; Ḥusām, &lsquo;&lsquo;Cutting Edge.&rdquo; The most first components of the &lsquo;&lsquo;Fulān al-dīn&rdquo; pattern are: Sayf al-dīn, &lsquo;&lsquo;Sword of Religion;&rdquo; ʿIzz&hellip;, &lsquo;&lsquo;Strength&hellip;;&rdquo; Jamāl, &lsquo;&lsquo;Beauty;&rdquo; Badr, &lsquo;&lsquo;Full Moon;&rdquo; Shams, &lsquo;&lsquo;Sun;&rdquo; Ṣalāḥ, &lsquo;&lsquo;Goodness;&rdquo; Ḥusām, &lsquo;&lsquo;Cutting Edge, &rdquo; Quṭb, &lsquo;&lsquo;Pole;&rdquo; ʿAlam, &lsquo;&lsquo;Banner.&rdquo;">20</a></sup> It is not entirely clear whether these names are given to the military by religious scholars or if they are self-claimed (most likely both), but the fact that the military are listed under these honorifics in biographical collections implies that at the very least religious scholars endorsed them.
 
 <figure class="half">
-	<a href="{{ site.url }}/images/TI_Words_HonorificNamesofAmirsFulandawla_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Words_HonorificNamesofAmirsFulandawla_ABS.jpg"></a>
-	<a href="{{ site.url }}/images/TI_Words_HonorificNamesofAmirsFulandin_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Words_HonorificNamesofAmirsFulandin_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Words_HonorificNamesofAmirsFulandawla_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Words_HonorificNamesofAmirsFulandawla_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Words_HonorificNamesofAmirsFulandin_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Words_HonorificNamesofAmirsFulandin_ABS.jpg"></a>
 	<figcaption><b>Figure 15.</b> Patterns of Military Honorific Names: Fulān al-dawla, the most common pattern in the middle period, gets replaced by Fulān al-dīn pattern in the later period.</figcaption>
 </figure>
 
 Frequencies of such words as *khalīfa/amīr al-muʾminīn*, <i>sulṭān</i> and <i>amīr</i> in biographies show that the 4th/10th century was a the period (Figure <b>16</b>) when scholarly attention started shifting from caliphs to <i>sulṭān</i>s and <i>amīr</i>s who were gaining more power and more social presence. This shift in frequencies also neatly marks the end of the period which Hodgson characterized as the High Caliphal Period (in his chronology: *c.* 692-945 CE),<sup><a href="#footnote_20_918" id="identifier_20_918" class="footnote-link footnote-identifier-link" title="There is also a late peak that corresponds to the restoration of the independence of the ʿAbbāsid caliphate during the second half of the 6th/12th century, but it is short-lived.">21</a></sup> and the beginning of the Earlier Middle Islamic Period (in his chronology: *c.* 945-1258 CE): the era of <i>sulṭān</i>s and <i>amīr</i>s.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/TI_Words_FrequenciesCALIPH_SULTAN_AMIR_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Words_FrequenciesCALIPH_SULTAN_AMIR_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Words_FrequenciesCALIPH_SULTAN_AMIR_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Words_FrequenciesCALIPH_SULTAN_AMIR_ABS.jpg"></a>
 	<figcaption><b>Figure 16.</b> Frequencies of <i>khalīfa</i>, <i>sulṭān</i>, <i>amīr</i>.</figcaption>
 </figure>
 
@@ -216,15 +216,15 @@ Frequencies of such words as *khalīfa/amīr al-muʾminīn*, <i>sulṭān</i> an
 Looking closer into trades and crafts, it can be pointed that several sectors are clearly distinguishable:<sup><a href="#footnote_22_918" id="identifier_22_918" class="footnote-link footnote-identifier-link" title="Largely following Shatzmiller&rsquo;s classification, see: Shatzmiller (1994); these sectors often overlap.">23</a></sup> textiles (1, 495), foods (799), metalwork (331), “chemistry” (349),<sup><a href="#footnote_23_918" id="identifier_23_918" class="footnote-link footnote-identifier-link" title="Trades that involve dealing with any complex compounds: al-ʿAṭṭār, &lsquo;&lsquo;druggist, perfumer;&rdquo; al-Ṣaydalānī, &lsquo;&lsquo;apothecary, druggist;&rdquo; al-Ṣābūnī, &lsquo;&lsquo;soap maker/seller&rdquo; etc.">24</a></sup> clothes (306), finances (278), paper/books (253), brokerage (231), jewelry (218), and sundry services (170).
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/TI_UniqueNisbas_DiversityofNisbasTradesandCrafts_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_UniqueNisbas_DiversityofNisbasTradesandCrafts_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_UniqueNisbas_DiversityofNisbasTradesandCrafts_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_UniqueNisbas_DiversityofNisbasTradesandCrafts_ABS.jpg"></a>
 	<figcaption><b>Figure 17.</b> Diversity of Trades and Crafts: Numbers of unique <i>nisba</i>s referring to trades in crafts by 20 lunar year periods.</figcaption>
 </figure>
 
 All sectors peak sometime between 300/913 CE and 500/1107 CE, but after that they show steady decline—even in those rare cases when absolute numbers remain quite significant, their percentages unmistakably go down. Practically all individual <i>nisba</i>s show the same trend. Merchants (sing. <i>tājir</i>, 294; Figure <b>18</b>) constitute the only group that shows a different trend and their numbers actually grow by the end of the period. This is, however, only because this is a blanket category that encompasses all the above listed “industries, ” without emphasizing any specific one in particular. Figure <b>19</b> shows the cumulative trend of involvement of religious scholars in crafts and trades. The curve based on absolute numbers (<i>left</i>) shows that numbers of scholars—who were either directly involved in specific crafts and trades or came from families that made their fortune in those areas—remained rather high until 600/1204 CE; relative numbers (<i>right</i>) show that the steady downward trend in this sector begins as early as 440/1049 CE—about three decades before the cumulative biographical curve (470/1078 CE) starts recovering.
 
 <figure class="half">
-	<a href="{{ site.url }}/images/TI_BiosCivilianSectorCraftsandTrades_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_BiosCivilianSectorCraftsandTrades_ABS.jpg"></a>
-	<a href="{{ site.url }}/images/TI_BiosCivilianSectorCraftsandTrades_REL.jpg" title=""><img src="{{ site.url }}/images/TI_BiosCivilianSectorCraftsandTrades_REL.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_BiosCivilianSectorCraftsandTrades_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_BiosCivilianSectorCraftsandTrades_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_BiosCivilianSectorCraftsandTrades_REL.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_BiosCivilianSectorCraftsandTrades_REL.jpg"></a>
 	<figcaption><b>Figure 19.</b> The Growth and Decline of Crafts and Trades.</figcaption>
 </figure>
 
@@ -235,8 +235,8 @@ The geographical distribution of these professions is most puzzling. Essentially
 Whether this decline of the civilian sector is a result of the actual withdrawal of the learned from trades and crafts, or, the loss of awareness of this part of their identity, the general effect on the development of the religious sector would still be the same: the loss of connections with broader population. It is not that religious scholars stopped maintaining connections with populace at large, but they gradually turned into a self-reproducing class whose members were primarily concerned about their own group interests.
 
 <figure class="half">
-	<a href="{{ site.url }}/images/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_ABS.jpg" title=""><img src="{{ site.url }}/images/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_ABS.jpg"></a>
-	<a href="{{ site.url }}/images/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_REL.jpg" title=""><img src="{{ site.url }}/images/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_REL.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_REL.jpg" title=""><img src="{{ site.url }}/images/tamfih/00000296_tAjr_TAGS_TRADE_CIVILIAN_MERCHANT_REL.jpg"></a>
 	<figcaption><b>Figure 18.</b> The Growth of Merchants.</figcaption>
 </figure>
 
@@ -246,7 +246,7 @@ Whether this decline of the civilian sector is a result of the actual withdrawal
 Here “professionalization” is understood as the growth of complexity of religious learning that leads to its branching into specific disciplines, mastering which eventually requires full-time commitment. Professionalization implies the development of a community of specialists who maintain qualifying standards and ensure demarcation from the non-qualified; ideally, mechanisms of monetary and status compensation for professional services should develop during this process.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/TI_UniqueNisbas_GrowthofReligiousSpecialisations_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_UniqueNisbas_GrowthofReligiousSpecialisations_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_UniqueNisbas_GrowthofReligiousSpecialisations_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_UniqueNisbas_GrowthofReligiousSpecialisations_ABS.jpg"></a>
 	<figcaption><b>Figure 20.</b> Growth of Religious Specializations: Numbers of unique <i>nisba</i>s referring to religious specializations by 20 lunar year periods.</figcaption>
 </figure>
 
@@ -255,7 +255,7 @@ If we agree on recognizing the process of branching of the religious learning in
 Although completely devoid of both buzzwords, Melchert’s study is perhaps the most valuable insight into the process of professionalization.<sup><a href="#footnote_28_918" id="identifier_28_918" class="footnote-link footnote-identifier-link" title="Melchert (1997).">29</a></sup> In his book on the formation of the Sunnī legal schools (<i>madhhab</i>), Melchert offered three major criteria: the recognition of the chief scholar (<i>raʾīs</i>), commentaries (<i>taʿliqa</i>) on the summaries of legal teachings (<i>mukhtaṣar</i>), as a proof of one’s qualification, and a more or less regulated process of transmission of legal knowledge, through which the achievement of required qualification is ensured. Chronologically, Melchert placed this process for the Shāfiʿīs, Ḥanbalīs and Ḥanafīs in Baghdad of the late 9<sup>thh</sup>—early 10<sup>thh</sup> centuries.<sup><a href="#footnote_29_918" id="identifier_29_918" class="footnote-link footnote-identifier-link" title="The failure of the Mālikīs Melchert explains by their being too closely linked to the caliphal patronage and when the caliphs were eclipsed, so were the Mālikīs. See: Melchert (1997), p.&nbsp;176.">30</a></sup> Keeping in mind this coincidence of Melchert’s close reading of legal <i>ṭabaqāt</i> and my distant reading of *Taʾrīkh al-islām*, we may—at least tentatively—consider 300/913 CE to be a turning point in the process of professionalization.
 
 <figure class="fit">
-	<a href="{{ site.url }}/images/TI_Words_WaqfInstitutions_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Words_WaqfInstitutions_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Words_WaqfInstitutions_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Words_WaqfInstitutions_ABS.jpg"></a>
 	<figcaption><b>Figure 21.</b> References to <i>Waqf</i> Institutions in Biographies.</figcaption>
 </figure>
 
@@ -266,8 +266,8 @@ The introduction and spread of <i>waqf</i> institutions is considered a turning 
 However, by offering salaried positions, the <i>waqf</i> institutions also reconfigured the structure of the learned class, which in the long run had a very negative effect. In his study of medieval Damascus,<sup><a href="#footnote_31_918" id="identifier_31_918" class="footnote-link footnote-identifier-link" title="Chamberlain (1994).">32</a></sup> Chamberlain convincingly argued that salaried positions (<i>manāṣib</i>) became one of the major object of contention among the learned who were now concerned about winning and holding as many of these positions as it was possible. One of their strategies was to ensure that the positions stayed within a family—household—which led to the formation of the dynasties of religious scholars and, in the long run, the transformation of the religious class into a rather closed social stratum, to which the word “clergy” became more and more applicable as time went on.
 
 <figure class="half">
-	<a href="{{ site.url }}/images/TI_Words_ReferencestoRelativesCum_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Words_ReferencestoRelativesCum_ABS.jpg"></a>
-	<a href="{{ site.url }}/images/TI_Words_ReferencestoRelatives_ABS.jpg" title=""><img src="{{ site.url }}/images/TI_Words_ReferencestoRelatives_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Words_ReferencestoRelativesCum_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Words_ReferencestoRelativesCum_ABS.jpg"></a>
+	<a href="{{ site.url }}/images/tamfih/TI_Words_ReferencestoRelatives_ABS.jpg" title=""><img src="{{ site.url }}/images/tamfih/TI_Words_ReferencestoRelatives_ABS.jpg"></a>
 	<figcaption><b>Figure 22.</b> References to Relatives. The graph on the left shows the major categories of relatives, while the on on the right shows the same data combined into one graph.</figcaption>
 </figure>
 

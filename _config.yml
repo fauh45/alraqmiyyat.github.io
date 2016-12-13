@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "al-Raqmiyyāt: Digital Islamic History"
+title                    : "al-Raqmiyyāt"
 title_separator          : "-"
 name                     : "Maxim Romanov"
-description              : "Reading Traditional Sources with Nontraditional Methods"
+description              : "Digital Islamic History: Reading Traditional Sources with Nontraditional Methods"
 baseurl                  : ""
 url                      : "https://alraqmiyyat.github.io"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
