@@ -329,7 +329,7 @@ Metadata on texts is not always complete. The missing information may be availab
 <link rel="stylesheet" href="/files/chronoTable.css">
 </head>
 
-<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+<script type="text/javascript" src="https://mbostock.github.com/d3/d3.js"></script>
 <script>
 
 // FUNCTIONS
