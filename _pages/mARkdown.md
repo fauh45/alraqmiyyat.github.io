@@ -359,12 +359,23 @@ All tags have similar structure `@` + `CODE` + two numbers. `CODE`s have two var
 1. the length of an attached prefix. For example, if `wa-` or `bi-` are attached to an entity, the first number must be `1`, which means that 1 character from the beginning must be removed)
 2. the length of the entity. If the entity is a bigram (*Madīnaŧ al-Salām*), number `2` must be used (both words will be automatically highlighted).
 
+**NB**: The tags have two varieties: a long one and a short one. The long one will be used for automatic tagging (*the automatic tagger is in progress*), while the short one will be reserved for manual tagging, as shorter tags are easier to type in manually; additionaly, the conversion of an automatic tag into a manual one in the process of edition and disambiguating is more efficient by deleting two characters, rather than adding them. 
+
 ### III.2.1 Toponyms
 
 1. Automatic long tag: `@TOPXX`
 2. Manual short tag: `@TXX`
 
-### III.2.2 Persons/Individuals
+<figure class="fit">
+	<a href="{{ site.url }}/images/md/md_top_tag.gif" title="">
+	<img src="{{ site.url }}/images/md/md_top_tag.gif">
+	</a>
+	<figcaption>
+		<b>OpenArabic mARkdown</b> pattern for tagging toponyms
+	</figcaption>
+</figure>
+
+### III.2.2 Individuals (Persons)
 
 1. Automatic long tag: `@PERXX`
 2. Manual short tag: `@PXX`
