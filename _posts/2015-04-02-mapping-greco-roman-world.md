@@ -28,6 +28,18 @@ Below is the code and some of the resulting visualizations.
 ~~~ r
 # R
 
+# You might need to install the necessary packages, which you can do by running the following lines
+# NB: uncomment them first
+
+# install.packages("ggplot2")
+# install.packages("maps")
+# install.packages("mapdata")
+# install.packages("rgeos")
+# install.packages("maptools")
+# install.packages("mapproj")
+# install.packages("PBSmapping")
+# install.packages("data.table")
+
 library(ggplot2)
 library(maps)
 library(mapdata)
