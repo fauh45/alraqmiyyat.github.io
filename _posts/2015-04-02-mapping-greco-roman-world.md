@@ -28,6 +28,18 @@ Below is the code and some of the resulting visualizations.
 ~~~ r
 # R
 
+# You might need to install the necessary packages, which you can do by running the following lines
+# NB: uncomment them first
+
+# install.packages("ggplot2")
+# install.packages("maps")
+# install.packages("mapdata")
+# install.packages("rgeos")
+# install.packages("maptools")
+# install.packages("mapproj")
+# install.packages("PBSmapping")
+# install.packages("data.table")
+
 library(ggplot2)
 library(maps)
 library(mapdata)
@@ -156,4 +168,4 @@ convert -resize 1200x900 -delay 75 -loop 0 Pleiades_Settle*.png Pleiades_Settlem
 
 ## Footnotes
 
-[^fn1]: al-Qādī, Wadād. “Population Census and Land Surveys under the Umayyads (41-132/661-750).” _Der Islam_ 83, no. 2 (2006), p. 341
+[^fn1]: al-Qādī, Wadād. “Population Census and Land Surveys under the Umayyads (41-132/661-750).” _Der Islam_ 83, no. 2 (2006), p. 341.
