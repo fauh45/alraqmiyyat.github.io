@@ -379,7 +379,7 @@
       </li>
       <li><a href="#iii2-named-entities" id="markdown-toc-iii2-named-entities">III.2 Named Entities</a>        <ul>
           <li><a href="#iii21-toponyms" id="markdown-toc-iii21-toponyms">III.2.1 Toponyms</a></li>
-          <li><a href="#iii22-personsindividuals" id="markdown-toc-iii22-personsindividuals">III.2.2 Persons/Individuals</a></li>
+          <li><a href="#iii22-individuals-persons" id="markdown-toc-iii22-individuals-persons">III.2.2 Individuals (Persons)</a></li>
           <li><a href="#iii23-biographical-characteristics" id="markdown-toc-iii23-biographical-characteristics">III.2.3 Biographical characteristics</a></li>
           <li><a href="#iii3-years-ah" id="markdown-toc-iii3-years-ah">III.3 Years AH</a></li>
           <li><a href="#iii4-open-semantic-tagging-pattern" id="markdown-toc-iii4-open-semantic-tagging-pattern">III.4 Open Semantic Tagging Pattern</a></li>
@@ -730,6 +730,8 @@
   <li>the length of the entity. If the entity is a bigram (<em>Madīnaŧ al-Salām</em>), number <code class="highlighter-rouge">2</code> must be used (both words will be automatically highlighted).</li>
 </ol>
 
+<p><strong>NB</strong>: The tags have two varieties: a long one and a short one. The long one will be used for automatic tagging (<em>the automatic tagger is in progress</em>), while the short one will be reserved for manual tagging, as shorter tags are easier to type in manually; additionaly, the conversion of an automatic tag into a manual one in the process of edition and disambiguating is more efficient by deleting two characters, rather than adding them.</p>
+
 <h3 id="iii21-toponyms">III.2.1 Toponyms</h3>
 
 <ol>
@@ -737,7 +739,16 @@
   <li>Manual short tag: <code class="highlighter-rouge">@TXX</code></li>
 </ol>
 
-<h3 id="iii22-personsindividuals">III.2.2 Persons/Individuals</h3>
+<figure class="fit">
+	<a href="http://localhost:4000/images/md/md_top_tag.gif" title="">
+	<img src="http://localhost:4000/images/md/md_top_tag.gif" />
+	</a>
+	<figcaption>
+		<b>OpenArabic mARkdown</b> pattern for tagging toponyms
+	</figcaption>
+</figure>
+
+<h3 id="iii22-individuals-persons">III.2.2 Individuals (Persons)</h3>
 
 <ol>
   <li>Automatic long tag: <code class="highlighter-rouge">@PERXX</code></li>
@@ -857,7 +868,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2016 Maxim Romanov. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2017 Maxim Romanov. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
       </footer>
     </div>
 

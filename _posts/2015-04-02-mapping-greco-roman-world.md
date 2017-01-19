@@ -43,6 +43,7 @@ worldmap=map_data("world")
 setnames(worldmap,c("X","Y","PID","POS","region","subregion"))
 worldmap=clipPolys(worldmap,xlim=xlim,ylim=ylim,keepExtra=TRUE)
 
+# setwd("") # set your working folder here
 dataFolder="" # ideally, full path to the folder
 csvName=paste0(dataFolder,"pleiades-locations-20150316.csv")
 locsRaw=read.csv(csvName,stringsAsFactors=F,header=T,sep=',')
@@ -78,7 +79,7 @@ land="grey"; water="grey80"; bgColor="grey80"
 locPleiades=geom_point(data=locsRaw,color="grey70",alpha=.75,size=1,aes(y=reprLat,x=reprLong))
 
 for (i in 1:nrow(features)) {
-  locs=locsRaw[ with(locsRaw, grepl(features[i,1],featureTypes)),]
+  locs=locsRaw[ with(locsRaw, grepl(features[i,1],featureType)),]
   for (ii in 1:nrow(periods)) {
     locPer=locs[ with(locs,grepl(periods[ii,1],timePeriodsKeys)),]
     locPer=geom_point(data=locPer,color="red",alpha=.75,size=1,aes(y=reprLat,x=reprLong))
