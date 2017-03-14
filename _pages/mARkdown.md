@@ -14,7 +14,7 @@ permalink: /mARkdown/
 
 # Very Short Intro
 
-1. Download and install [EditPad Pro](http://www.editpadpro.com/); unfortunatey, **EditPad Pro** is for Windows only; if you are using Mac or Linux, you can still use it with some virtualization option.
+1. Download and install [EditPad Pro](http://www.editpadpro.com/); unfortunately, **EditPad Pro** is for Windows only; if you are using Mac or Linux, you can still use it with some virtualization option.
 2. Download **OpenArabic mARkdown** schemes from GitHub ([https://github.com/maximromanov/mARkdown](https://github.com/maximromanov/mARkdown)), and unzip, and copy all the files into `%APPDATA%\JGsoft\EditPad Pro 7` (make sure that EditPad Pro in not running: you need to do `File > Exit` to completely close it).
 3. Texts in the repositories of the [OpenArabic Project](https://github.com/OpenArabic) have already been preprocessed. Opening any of these texts in EditPad Pro should automatically activate **OpenArabic mARkdown** scheme.
 4. The goal is to tag the structure of a text, which boils down to:
@@ -204,23 +204,23 @@ Full tags are as follows:
 
 ### I.3.3 Other types of information units
 
-### I.3.3.1 *Riwayāt* units
+### I.3.3.1 *Riwāyāt* units
 
 **NB**: Frankfurt U Team; added: August 12, 2016
 
-Each *riwāyaŧ*/*ḥadīṯ* report should be treated as a separate paragraph: `new line + # $RWY$ `; in order to demarkate the boundary between *isnād* and *matn*, `@MATN@` tag is to be inserted between *isnād* and *matn*. Since it is not uncommon to have an evaluation of reported material, tag `@HUKM@` can be used to tag the beginning of the *ḥukm*-statement. All three elements of a *riwāyaŧ/ḥadīṯ* must remain the part of the same `paragraph`.
+Each *riwāyaŧ*/*ḥadīṯ* report should be treated as a separate paragraph: `new line + # $RWY$ `; in order to mark the boundary between *isnād* and *matn*, `@MATN@` tag is to be inserted between *isnād* and *matn*. Since it is not uncommon to have an evaluation of reported material, tag `@HUKM@` can be used to tag the beginning of the *ḥukm*-statement. All three elements of a *riwāyaŧ/ḥadīṯ* must remain the part of the same `paragraph`.
 
 ```
 # $RWY$ this section contains isnād @MATN@ this section contains matn @HUKM@ this section contains ḥukm .
 ``` 
 
-It is not uncomon that either *isnād* or *matn* is missing. In such cases `@MATN@` tag still must be inserted: in the case of missing *isnād*, `@MATN@` directly follows `# $RWY$ `; in the case of missing *matn*, `@MATN@` becomes the last element in the *ḥadīṯ* paragraph. `@HUKM@` is optional and inserted only when there is a *ḥukm*-statement.
+It is not uncommon that either *isnād* or *matn* is missing. In such cases `@MATN@` tag still must be inserted: in the case of missing *isnād*, `@MATN@` directly follows `# $RWY$ `; in the case of missing *matn*, `@MATN@` becomes the last element in the *ḥadīṯ* paragraph. `@HUKM@` is optional and inserted only when there is a *ḥukm*-statement.
 
 #### I.3.3.2 Doxographical units
 
 **NB:** David Bennet; added: September 23, 2016
 
-The following tags are section tags to be places at the beginning of a relevant section: (1) `### $DOX_POS$` for sections dealing woth doxographical/theological positions; (2) `### $DOX_SEC$` for descriptions of religious groups (“sects”). These can be used equally in doxographical texts and texts that address doxographical issues among many other things. 
+The following tags are section tags to be places at the beginning of a relevant section: (1) `### $DOX_POS$` for sections dealing with doxographical/theological positions; (2) `### $DOX_SEC$` for descriptions of religious groups (“sects”). These can be used equally in doxographical texts and texts that address doxographical issues among many other things. 
 
 ### I.3.4 Secondary divisions in chapters and information units
 
@@ -232,7 +232,7 @@ Chapters and information units may have internal divisions that are marked eithe
 # II. In-text elements
 <hr>
 
-Most of the in-text elements are already in pre-formatted texts. In most cases, you do not need to worry about them, but it is important to understant how they function.
+Most of the in-text elements are already in pre-formatted texts. In most cases, you do not need to worry about them, but it is important to understand how they function.
 
 ## II.1 Paragraphs and lines
 
@@ -255,7 +255,7 @@ While EditPad Pro handles large files very well, it has problems with long parag
 
 **RE**: `%~%`
 
-Poetry lines can be tagged in the following manner: one line of poetry per line/paragraph, beginning and ending with `%~%` and with hemistiches divided by `%~%` (when applicable).
+Poetry lines can be tagged in the following manner: one line of poetry per line/paragraph, beginning and ending with `%~%` and with hemistichs divided by `%~%` (when applicable).
 
 ```
 # %~% hemistich1 %~% hemistich2 %~%
@@ -359,7 +359,7 @@ All tags have similar structure `@` + `CODE` + two numbers. `CODE`s have two var
 1. the length of an attached prefix. For example, if `wa-` or `bi-` are attached to an entity, the first number must be `1`, which means that 1 character from the beginning must be removed)
 2. the length of the entity. If the entity is a bigram (*Madīnaŧ al-Salām*), number `2` must be used (both words will be automatically highlighted).
 
-**NB**: The tags have two varieties: a long one and a short one. The long one will be used for automatic tagging (*the automatic tagger is in progress*), while the short one will be reserved for manual tagging, as shorter tags are easier to type in manually; additionaly, the conversion of an automatic tag into a manual one in the process of edition and disambiguating is more efficient by deleting two characters, rather than adding them. 
+**NB**: The tags have two varieties: a long one and a short one. The long one will be used for automatic tagging (*the automatic tagger is in progress*), while the short one will be reserved for manual tagging, as shorter tags are easier to type in manually; additionally, the conversion of an automatic tag into a manual one in the process of edition and disambiguating is more efficient by deleting two characters, rather than adding them. 
 
 ### III.2.1 Toponyms
 
@@ -410,7 +410,7 @@ MGR
 │       └── love
 ├── KHUTBA
 │   ├── education
-│   │   ├── punishmenst
+│   │   ├── punishment
 │   │   ├── hadith
 │   │   └── fiqh
 │   └── sermons
@@ -422,9 +422,9 @@ MGR
 
 Above is a snapshot of a scheme that I used for tagging biographies of preachers. In this example, I am looking into individuals involved into two different forms of preaching—*waʿẓ* and *ḫuṭbaŧ*, their education backgrounds and topics of their sermons. Thus, my tag in the case of a *wāʿiẓ* who had training in *fiqh* will look as follows: `@MGR@WACZ_education_fiqh@`. In combination with chronological, geographical and social information (derived from *nisbaŧ*s), one can get a perspective on how many individuals involved in *waʿẓ* had training in *fiqh* and if there are any chronological, geographical and social peculiarities to this information.
 
-It is vital to keep track of tags one introduces and avoid creating too many of them. Another useful stategy is to keep them short, for instance: `@MGR@WCZ_ed_fqh@` (it is your own decision, of course, how to balance brevity and readability).
+It is vital to keep track of tags one introduces and avoid creating too many of them. Another useful strategy is to keep them short, for instance: `@MGR@WCZ_ed_fqh@` (it is your own decision, of course, how to balance brevity and readability).
 
-# IV. Known issues with EitPad Pro and OpenArabic mARkdown
+# IV. Known issues with EditPad Pro and OpenArabic mARkdown
 
 ## IV.1. Highlighting scheme running amok
 
