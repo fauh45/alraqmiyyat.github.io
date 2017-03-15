@@ -389,9 +389,10 @@ All tags have similar structure `@` + `CODE` + two numbers. `CODE`s have two var
 
 Years AH can be tagged in the following manner (where `#` is a digit; there must be spaces on both sides of the year tag):
 
-1. `YB####` — a year of birth, as mentioned in a biography; for example, `@YB510` means that a biographee was born in the year 510 of the Islamic *hijrī* calendar.
+2. `YB####` — a year of birth, as mentioned in a biography; for example, `@YB510` means that a biographee was born in the year 510 of the Islamic *hijrī* calendar.
 2. `YD####`—a year of death, as mentioned in a biography; for example, `@YD597` means that a biographee died in the year 597 of the Islamic *hijrī* calendar.
 3. `YY####`—any other type of year references mentioned in a text.
+4. `YA####` — age in years.
 
 ### III.4 Open Semantic Tagging Pattern
 
