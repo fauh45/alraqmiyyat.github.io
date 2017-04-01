@@ -317,7 +317,7 @@
         <h1 id="very-short-intro">Very Short Intro</h1>
 
 <ol>
-  <li>Download and install <a href="http://www.editpadpro.com/">EditPad Pro</a>; unfortunatey, <strong>EditPad Pro</strong> is for Windows only; if you are using Mac or Linux, you can still use it with some virtualization option.</li>
+  <li>Download and install <a href="http://www.editpadpro.com/">EditPad Pro</a>; unfortunately, <strong>EditPad Pro</strong> is for Windows only; if you are using Mac or Linux, you can still use it with some virtualization option.</li>
   <li>Download <strong>OpenArabic mARkdown</strong> schemes from GitHub (<a href="https://github.com/maximromanov/mARkdown">https://github.com/maximromanov/mARkdown</a>), and unzip, and copy all the files into <code class="highlighter-rouge">%APPDATA%\JGsoft\EditPad Pro 7</code> (make sure that EditPad Pro in not running: you need to do <code class="highlighter-rouge">File &gt; Exit</code> to completely close it).</li>
   <li>Texts in the repositories of the <a href="https://github.com/OpenArabic">OpenArabic Project</a> have already been preprocessed. Opening any of these texts in EditPad Pro should automatically activate <strong>OpenArabic mARkdown</strong> scheme.</li>
   <li>The goal is to tag the structure of a text, which boils down to:
@@ -350,7 +350,7 @@
           <li><a href="#i31-dictionaries" id="markdown-toc-i31-dictionaries">I.3.1 Dictionaries</a></li>
           <li><a href="#i32-biographical-collections-and-chronicles" id="markdown-toc-i32-biographical-collections-and-chronicles">I.3.2 Biographical Collections and Chronicles</a></li>
           <li><a href="#i33-other-types-of-information-units" id="markdown-toc-i33-other-types-of-information-units">I.3.3 Other types of information units</a></li>
-          <li><a href="#i331-riwayāt-units" id="markdown-toc-i331-riwayāt-units">I.3.3.1 <em>Riwayāt</em> units</a>            <ul>
+          <li><a href="#i331-riwāyāt-units" id="markdown-toc-i331-riwāyāt-units">I.3.3.1 <em>Riwāyāt</em> units</a>            <ul>
               <li><a href="#i332-doxographical-units" id="markdown-toc-i332-doxographical-units">I.3.3.2 Doxographical units</a></li>
             </ul>
           </li>
@@ -387,7 +387,7 @@
       </li>
     </ul>
   </li>
-  <li><a href="#iv-known-issues-with-eitpad-pro-and-openarabic-markdown" id="markdown-toc-iv-known-issues-with-eitpad-pro-and-openarabic-markdown">IV. Known issues with EitPad Pro and OpenArabic mARkdown</a>    <ul>
+  <li><a href="#iv-known-issues-with-editpad-pro-and-openarabic-markdown" id="markdown-toc-iv-known-issues-with-editpad-pro-and-openarabic-markdown">IV. Known issues with EditPad Pro and OpenArabic mARkdown</a>    <ul>
       <li><a href="#iv1-highlighting-scheme-running-amok" id="markdown-toc-iv1-highlighting-scheme-running-amok">IV.1. Highlighting scheme running amok</a></li>
       <li><a href="#iv2-folding-scheme-does-not-seem-to-work" id="markdown-toc-iv2-folding-scheme-does-not-seem-to-work">IV.2. Folding scheme does not seem to work</a></li>
     </ul>
@@ -575,23 +575,39 @@
 
 <h3 id="i33-other-types-of-information-units">I.3.3 Other types of information units</h3>
 
-<h3 id="i331-riwayāt-units">I.3.3.1 <em>Riwayāt</em> units</h3>
+<h3 id="i331-riwāyāt-units">I.3.3.1 <em>Riwāyāt</em> units</h3>
 
-<p><strong>NB</strong>: Frankfurt U Team; added: August 12, 2016</p>
+<p><strong>NB</strong>: U Frankfurt Team; <em>added</em>: August 12, 2016; <em>updated</em>: March 31, 2017</p>
 
-<p>Each <em>riwāyaŧ</em>/<em>ḥadīṯ</em> report should be treated as a separate paragraph: <code class="highlighter-rouge">new line + # $RWY$ </code>; in order to demarkate the boundary between <em>isnād</em> and <em>matn</em>, <code class="highlighter-rouge">@MATN@</code> tag is to be inserted between <em>isnād</em> and <em>matn</em>. Since it is not uncommon to have an evaluation of reported material, tag <code class="highlighter-rouge">@HUKM@</code> can be used to tag the beginning of the <em>ḥukm</em>-statement. All three elements of a <em>riwāyaŧ/ḥadīṯ</em> must remain the part of the same <code class="highlighter-rouge">paragraph</code>.</p>
+<p>Each <em>riwāyaŧ</em>/<em>ḥadīṯ</em> report should be treated as a separate paragraph: <code class="highlighter-rouge">new line + # $RWY$ </code>; in order to mark the boundary between <em>isnād</em> and <em>matn</em>, <code class="highlighter-rouge">@MATN@</code> tag is to be inserted between <em>isnād</em> and <em>matn</em>. Since it is not uncommon to have an evaluation of reported material, tag <code class="highlighter-rouge">@HUKM@</code> can be used to tag the beginning of the <em>ḥukm</em>-statement. All three elements of a <em>riwāyaŧ/ḥadīṯ</em> must remain the part of the same <code class="highlighter-rouge">paragraph</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># $RWY$ this section contains isnād @MATN@ this section contains matn @HUKM@ this section contains ḥukm .
+<div class="highlighter-rouge"><pre class="highlight"><code># $RWY$ this section contains isnād @MATN@ this section
+contains matn @HUKM@ this section contains ḥukm .
 </code></pre>
 </div>
 
-<p>It is not uncomon that either <em>isnād</em> or <em>matn</em> is missing. In such cases <code class="highlighter-rouge">@MATN@</code> tag still must be inserted: in the case of missing <em>isnād</em>, <code class="highlighter-rouge">@MATN@</code> directly follows <code class="highlighter-rouge"># $RWY$ </code>; in the case of missing <em>matn</em>, <code class="highlighter-rouge">@MATN@</code> becomes the last element in the <em>ḥadīṯ</em> paragraph. <code class="highlighter-rouge">@HUKM@</code> is optional and inserted only when there is a <em>ḥukm</em>-statement.</p>
+<p>It is not uncommon that either <em>isnād</em> or <em>matn</em> is missing. In such cases <code class="highlighter-rouge">@MATN@</code> tag still must be inserted: in the case of missing <em>isnād</em>, <code class="highlighter-rouge">@MATN@</code> directly follows <code class="highlighter-rouge"># $RWY$ </code>; in the case of missing <em>matn</em>, <code class="highlighter-rouge">@MATN@</code> becomes the last element in the <em>ḥadīṯ</em> paragraph. <code class="highlighter-rouge">@HUKM@</code> is optional and inserted only when there is a <em>ḥukm</em>-statement.</p>
+
+<figure class="fit">
+	<a href="http://localhost:4000/images/md/riwayat_tagging.png" title="">
+	<img src="http://localhost:4000/images/md/riwayat_tagging.png" />
+	</a>
+	<figcaption>
+		<b>OpenArabic mARkdown</b>: An example of tagging <i>riwāyāt</i> in Ibn al-Jawzī’s <i>Talbīs Iblīs</i>.
+	</figcaption>
+</figure>
+
+<p>The following regular expression will help highlighting sections with <em>isnād</em>s (copy-paste it into the search window of <strong>EditPad Pro</strong>):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>\bو?(عن|حدث(نا|ني|ت)|[اأ]نبأ(نا|ني|ت)|[اأ]خبر(نا|ني|ت)|ث?نا|ثني)(( |\n~~)(\w+( |\n~~)){2})
+</code></pre>
+</div>
 
 <h4 id="i332-doxographical-units">I.3.3.2 Doxographical units</h4>
 
 <p><strong>NB:</strong> David Bennet; added: September 23, 2016</p>
 
-<p>The following tags are section tags to be places at the beginning of a relevant section: (1) <code class="highlighter-rouge">### $DOX_POS$</code> for sections dealing woth doxographical/theological positions; (2) <code class="highlighter-rouge">### $DOX_SEC$</code> for descriptions of religious groups (“sects”). These can be used equally in doxographical texts and texts that address doxographical issues among many other things.</p>
+<p>The following tags are section tags to be places at the beginning of a relevant section: (1) <code class="highlighter-rouge">### $DOX_POS$</code> for sections dealing with doxographical/theological positions; (2) <code class="highlighter-rouge">### $DOX_SEC$</code> for descriptions of religious groups (“sects”). These can be used equally in doxographical texts and texts that address doxographical issues among many other things.</p>
 
 <h3 id="i34-secondary-divisions-in-chapters-and-information-units">I.3.4 Secondary divisions in chapters and information units</h3>
 
@@ -602,7 +618,7 @@
 <h1 id="ii-in-text-elements">II. In-text elements</h1>
 <hr />
 
-<p>Most of the in-text elements are already in pre-formatted texts. In most cases, you do not need to worry about them, but it is important to understant how they function.</p>
+<p>Most of the in-text elements are already in pre-formatted texts. In most cases, you do not need to worry about them, but it is important to understand how they function.</p>
 
 <h2 id="ii1-paragraphs-and-lines">II.1 Paragraphs and lines</h2>
 
@@ -625,7 +641,7 @@
 
 <p><strong>RE</strong>: <code class="highlighter-rouge">%~%</code></p>
 
-<p>Poetry lines can be tagged in the following manner: one line of poetry per line/paragraph, beginning and ending with <code class="highlighter-rouge">%~%</code> and with hemistiches divided by <code class="highlighter-rouge">%~%</code> (when applicable).</p>
+<p>Poetry lines can be tagged in the following manner: one line of poetry per line/paragraph, beginning and ending with <code class="highlighter-rouge">%~%</code> and with hemistichs divided by <code class="highlighter-rouge">%~%</code> (when applicable).</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code># %~% hemistich1 %~% hemistich2 %~%
 </code></pre>
@@ -640,8 +656,6 @@
 <p>Qur’anic verses can be tagged in the following manner: 1) <code class="highlighter-rouge">@QB@</code>—at the beginning of a verse; 2) <code class="highlighter-rouge">@QE@</code>—at the end.</p>
 
 <p><strong>NB</strong>: it is not recommended to tag verses of the Qurʾān at this point; the tags that may occur in the existing texts simply preserve residual and inconsistent tagging of Qurʾānic verses in the initial versions of texts.</p>
-
-<p><em>an image to be added</em></p>
 
 <h2 id="ii4-page-numbers">II.4 Page numbers</h2>
 
@@ -730,7 +744,7 @@
   <li>the length of the entity. If the entity is a bigram (<em>Madīnaŧ al-Salām</em>), number <code class="highlighter-rouge">2</code> must be used (both words will be automatically highlighted).</li>
 </ol>
 
-<p><strong>NB</strong>: The tags have two varieties: a long one and a short one. The long one will be used for automatic tagging (<em>the automatic tagger is in progress</em>), while the short one will be reserved for manual tagging, as shorter tags are easier to type in manually; additionaly, the conversion of an automatic tag into a manual one in the process of edition and disambiguating is more efficient by deleting two characters, rather than adding them.</p>
+<p><strong>NB</strong>: The tags have two varieties: a long one and a short one. The long one will be used for automatic tagging (<em>the automatic tagger is in progress</em>), while the short one will be reserved for manual tagging, as shorter tags are easier to type in manually; additionally, the conversion of an automatic tag into a manual one in the process of edition and disambiguating is more efficient by deleting two characters, rather than adding them.</p>
 
 <h3 id="iii21-toponyms">III.2.1 Toponyms</h3>
 
@@ -770,6 +784,7 @@
   <li><code class="highlighter-rouge">YB####</code> — a year of birth, as mentioned in a biography; for example, <code class="highlighter-rouge">@YB510</code> means that a biographee was born in the year 510 of the Islamic <em>hijrī</em> calendar.</li>
   <li><code class="highlighter-rouge">YD####</code>—a year of death, as mentioned in a biography; for example, <code class="highlighter-rouge">@YD597</code> means that a biographee died in the year 597 of the Islamic <em>hijrī</em> calendar.</li>
   <li><code class="highlighter-rouge">YY####</code>—any other type of year references mentioned in a text.</li>
+  <li><code class="highlighter-rouge">YA####</code> — age in years.</li>
 </ol>
 
 <h3 id="iii4-open-semantic-tagging-pattern">III.4 Open Semantic Tagging Pattern</h3>
@@ -788,7 +803,7 @@
 │       └── love
 ├── KHUTBA
 │   ├── education
-│   │   ├── punishmenst
+│   │   ├── punishment
 │   │   ├── hadith
 │   │   └── fiqh
 │   └── sermons
@@ -801,9 +816,9 @@
 
 <p>Above is a snapshot of a scheme that I used for tagging biographies of preachers. In this example, I am looking into individuals involved into two different forms of preaching—<em>waʿẓ</em> and <em>ḫuṭbaŧ</em>, their education backgrounds and topics of their sermons. Thus, my tag in the case of a <em>wāʿiẓ</em> who had training in <em>fiqh</em> will look as follows: <code class="highlighter-rouge">@MGR@WACZ_education_fiqh@</code>. In combination with chronological, geographical and social information (derived from <em>nisbaŧ</em>s), one can get a perspective on how many individuals involved in <em>waʿẓ</em> had training in <em>fiqh</em> and if there are any chronological, geographical and social peculiarities to this information.</p>
 
-<p>It is vital to keep track of tags one introduces and avoid creating too many of them. Another useful stategy is to keep them short, for instance: <code class="highlighter-rouge">@MGR@WCZ_ed_fqh@</code> (it is your own decision, of course, how to balance brevity and readability).</p>
+<p>It is vital to keep track of tags one introduces and avoid creating too many of them. Another useful strategy is to keep them short, for instance: <code class="highlighter-rouge">@MGR@WCZ_ed_fqh@</code> (it is your own decision, of course, how to balance brevity and readability).</p>
 
-<h1 id="iv-known-issues-with-eitpad-pro-and-openarabic-markdown">IV. Known issues with EitPad Pro and OpenArabic mARkdown</h1>
+<h1 id="iv-known-issues-with-editpad-pro-and-openarabic-markdown">IV. Known issues with EditPad Pro and OpenArabic mARkdown</h1>
 
 <h2 id="iv1-highlighting-scheme-running-amok">IV.1. Highlighting scheme running amok</h2>
 

@@ -206,15 +206,31 @@ Full tags are as follows:
 
 ### I.3.3.1 *Riwāyāt* units
 
-**NB**: Frankfurt U Team; added: August 12, 2016
+**NB**: U Frankfurt Team; *added*: August 12, 2016; *updated*: March 31, 2017
 
 Each *riwāyaŧ*/*ḥadīṯ* report should be treated as a separate paragraph: `new line + # $RWY$ `; in order to mark the boundary between *isnād* and *matn*, `@MATN@` tag is to be inserted between *isnād* and *matn*. Since it is not uncommon to have an evaluation of reported material, tag `@HUKM@` can be used to tag the beginning of the *ḥukm*-statement. All three elements of a *riwāyaŧ/ḥadīṯ* must remain the part of the same `paragraph`.
 
 ```
-# $RWY$ this section contains isnād @MATN@ this section contains matn @HUKM@ this section contains ḥukm .
+# $RWY$ this section contains isnād @MATN@ this section
+contains matn @HUKM@ this section contains ḥukm .
 ``` 
 
 It is not uncommon that either *isnād* or *matn* is missing. In such cases `@MATN@` tag still must be inserted: in the case of missing *isnād*, `@MATN@` directly follows `# $RWY$ `; in the case of missing *matn*, `@MATN@` becomes the last element in the *ḥadīṯ* paragraph. `@HUKM@` is optional and inserted only when there is a *ḥukm*-statement.
+
+<figure class="fit">
+	<a href="{{ site.url }}/images/md/riwayat_tagging.png" title="">
+	<img src="{{ site.url }}/images/md/riwayat_tagging.png">
+	</a>
+	<figcaption>
+		<b>OpenArabic mARkdown</b>: An example of tagging <i>riwāyāt</i> in Ibn al-Jawzī’s <i>Talbīs Iblīs</i>.
+	</figcaption>
+</figure>
+
+The following regular expression will help highlighting sections with *isnād*s (copy-paste it into the search window of **EditPad Pro**):
+
+```
+\bو?(عن|حدث(نا|ني|ت)|[اأ]نبأ(نا|ني|ت)|[اأ]خبر(نا|ني|ت)|ث?نا|ثني)(( |\n~~)(\w+( |\n~~)){2})
+```
 
 #### I.3.3.2 Doxographical units
 
@@ -270,8 +286,6 @@ _an image to be added_
 Qur’anic verses can be tagged in the following manner: 1) `@QB@`—at the beginning of a verse; 2) `@QE@`—at the end.
 
 **NB**: it is not recommended to tag verses of the Qurʾān at this point; the tags that may occur in the existing texts simply preserve residual and inconsistent tagging of Qurʾānic verses in the initial versions of texts.
-
-_an image to be added_
 
 ## II.4 Page numbers
 
