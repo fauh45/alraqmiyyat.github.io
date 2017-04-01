@@ -1,5 +1,5 @@
 ---
-excerpt:	"The main goal of **OpenArabic mARkdown** is to provide a simple system for tagging structural elements in premodern and early modern Arabic texts that are being prepared within the framework of the [OpenArabic Project](https://github.com/OpenArabic). The use of **OpenArabic mARkdown** will allow one to engage in the computational analysis of classical Arabic texts in the same way as more complex and time-consuming tagging schemes (like TEI XML); **OpenArabic mARkdown** will also facilitate the conversion of the large volume of Arabic texts into TEI XML, which is now the standard format for digital editions. In principle, **OpenArabic mARkdown** does not require any special editor, but the current implementation relies on EditPad Pro, which supports right-to-left languages, Unicode, and large files. However, it is the support of custom highlighting and navigation schemes that makes this text editor particularly convenient for **OpenArabic mARkdown**."
+excerpt:	"The main goal of **OpenArabic mARkdown** is to provide a simple system for tagging structural elements in premodern and early modern Arabic texts that are being prepared within the framework of the [OpenArabic Project](https://github.com/OpenArabic). The use of **OpenArabic mARkdown** will allow one to engage in the computational analysis of classical Arabic texts in the same way as more complex and time-consuming tagging schemes (like TEI XML)."
 header:
   overlay_image: /images/covers/16022u.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
@@ -11,6 +11,9 @@ comments: true
 author_profile: true
 permalink: /mARkdown/
 ---
+
+The main goal of **OpenArabic mARkdown** is to provide a simple system for tagging structural elements in premodern and early modern Arabic texts that are being prepared within the framework of the [OpenArabic Project](https://github.com/OpenArabic). The use of **OpenArabic mARkdown** will allow one to engage in the computational analysis of classical Arabic texts in the same way as more complex and time-consuming tagging schemes (like TEI XML); **OpenArabic mARkdown** will also facilitate the conversion of the large volume of Arabic texts into TEI XML, which is now the standard format for digital editions. In principle, **OpenArabic mARkdown** does not require any special editor, but the current implementation relies on EditPad Pro, which supports right-to-left languages, Unicode, and large files. However, it is the support of custom highlighting and navigation schemes that makes this text editor particularly convenient for **OpenArabic mARkdown**.
+
 
 # Very Short Intro
 
