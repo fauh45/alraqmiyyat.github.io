@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="generator" content="pandoc"/>
+    <title>Exploratorium Prototype: Template Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.0/mapbox.js'></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+    <script src="map.js"></script>
+    <script src="topo.js"></script>
+    <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <script src="load_csv_data.js"></script>
+    <script src="helpers.js"></script>
+</head>
+<body>
+<div align="center" style="width:100%;">
+    <div style="background: darkslategray; height:50px;" class="fixed" role="navigation">
+        <h3 style="color:white;margin-top: 10px;font-family:sans-serif" align="center">Exploratorium</h3>
+    </div><!--/.navbar -->
+    <!--<p>This page represents a prototype template for dynamic (automated) data visualization.</p>-->
+    <div id="patterns-of-" width="100%">
+        <p class="body">Here is an analysis of the scholar <select id="people"></select> regarding the
+            places where he was traveled. In the following map, you can see where this scholar traveled in the history.
+            In this map, the bigger the radius of a circle is, the scholar visited that city more.</p>
+        <br/>
+        <!--<h1 id="scholar_name">Patterns of الواعظ</h1>-->
+        <div id="space" style="font-family: Georgia, serif;;">
+            <h2>Space</h2>
+            <div id="geoscatter" style="width:100%;height:550px;">
+                <svg id="container" width="100%" height="500px" style="border: solid">
+                    <g id="main-svg">
+                        <g id="land"></g>
+                        <g id="rivers"></g>
+                        <g id="lakes"></g>
+                        <g id="topos"></g>
+                    </g>
+                    <g id="legend">
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <p class="body">
+            During the time this scholar is moved differently. Some year he moved more than
+            another year. So, the following diagram shows the frequency of these travels.
+            There are two y axis representing the absolute frequency and in the percentage.
+            The x axis here shows the years regarding Islamic Lunar calender (<i>Hijri</i>).
+        </p>
+
+        <div id="time" style="margin-left:10px;width:90%;height:500px;">
+            <h2>Time</h2>
+            <div id="freqs" style="width:100%;height:500px;" class="">
+                <svg class="dual-axis-svg">
+                    <g></g>
+                </svg>
+            </div>
+        </div>
+        <br/>
+        <br/><br/>
+
+        <p class="body">
+            Another interesting observation is the movements of this scholar between different cities.
+            We build a graph in which the vertices represent the cities and the edges show the movement
+            of this schlar between these cities. Since the graph can be relatively large, we filter
+            the small frequencies. This threshold can be changed by the following slider,
+        </p>
+        <div style="margin: 5px;"><h2>
+            <label for="freqFilter" style="display: inline-block;">
+                Frequency &ge; <span id="freqFilter-value">3</span>
+            </label></h2>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td><input type="range" min="1" max="20" id="freqFilter" value="3"
+                               style="width:400px;height:30px;margin: 5px;"></td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+        <br/>
+        <p class="body">
+            Based on the selected threshold for the frequencies,
+            the following graph is generated. The colors represent three different categories:
+            onomastic data (names), toponymic onomastic data (toponymic names),
+            and toponymic data (toponyms). The graph is drawn based on the
+            force-directed visualization and it is moving until a equilibrium is achieved.
+        </p>
+        <div id="network-of-entities" class="section level2">
+            <h2>Network of entities</h2>
+            <div id="mygraph" style="width:90%;height:600px;" class="">
+                <svg></svg>
+            </div>
+        </div>
+        <p class="body">
+            The graph can be similarly visualized using a heatmap. So, the axes are the cities and
+            the value of the heatmap shows the frequency of travel between these cities. The values
+            are shown by colors here. When a color is stronger (nearer to black), the frequency is higher.
+        </p>
+
+        <div id="matrix-of-entities-alternative-to-network" style="width:90%;height:500px;">
+            <h2>Matrix of entities (alternative to network)</h2>
+            <div id="chart" style="width:100%;height:510px;" class="">
+                <svg></svg>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div id="other" style="margin-top:100px">
+        <h1>Other</h1>
+        <p>Notes: Can I use a dendrogram like <a href="https://plot.ly/ggplot2/ggdendro-dendrograms/">this</a> for
+            something?</p>
+        <ol style="list-style-type: decimal">
+            <li>Level of connections among regions over time?</li>
+            <li>Different social groups in time and space and their interconnectedness?</li>
+        </ol>
+    </div>
+    <p>Copyright &copy; 2016 Maxim Romanov</p>
+</div>
+<script src="generate_network_data.js"></script>
+<script src="prepare_dual_axis_diagram.js"></script>
+<script src="init_select_scholars.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
