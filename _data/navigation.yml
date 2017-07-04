@@ -6,6 +6,8 @@ main:
     url: "/openarabic/"
   - title: "mARkdown"
     url: "/mARkdown/"
+  - title: "OpenITI mARkdown"
+    url: "/mARkdown_new/"
   - title: "<i>al-Ṯurayyā</i>"
     url: "/althurayya/"
   - title: "KITAB"
