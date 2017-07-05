@@ -79,8 +79,8 @@ analytics:
 author:
   name             : "Maxim Romanov"
   avatar           : "/images/personal/RM_600.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Research fellow (PhD in Near Eastern Studies, U of Michigan, 2013) at the Humboldt Chair for Digital Humanities [Institut für Informatik], Leipzig University. He studies Islamic historical texts with computational methods, currently focusing on the analysis of multivolume biographical and bibliographical collections."
-  location         : "Leipzig, Germany"
+  bio              : "Universitätsassistent für Digital Humanities (PhD in Near Eastern Studies, U of Michigan, 2013), Institut für Geschichte, Universität Wien. He studies Islamic historical texts with computational methods, currently focusing on the analysis of multivolume biographical and bibliographical collections."
+  location         : "Vienna, Austria"
   email            : "romanov.maxim@gmail.com"
   uri              :
   bitbucket        :
