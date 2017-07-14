@@ -89,8 +89,8 @@ From the example below, you can see that the repository `0525AH` includes a subf
 
 ## File extensions
 
-* `[no extension]` : This is a RAW file, automatically converted from its initia format to be as close to the **OpenITI mARkdown** format as possible.
-* `*.inProgress` :  The file has been selected to be fuly converted into OpenITI mARkdown and is currently `in progress` of being converted (`github` log contains the username of the person who is working on the file).
+* `[no extension]` : This is a RAW file, automatically converted from its initial format to be as close to the **OpenITI mARkdown** format as possible.
+* `*.inProgress` :  The file has been selected to be fully converted into OpenITI mARkdown and is currently `in progress` of being converted (`github` log contains the username of the person who is working on the file).
 * `*.completed` : The conversion of the file is completed, but the file still requires final verification and vetting.
 * `*.mARkdown` : The file has been verified and vetted. This version should also have expanded tags and IDs assigned to each logical unit.
 
