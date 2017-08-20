@@ -42,7 +42,7 @@ The **OpenITI mARkdown** file includes three main sections: 1) `magic value` tha
 	<img src="{{ site.url }}/images/mARkdown/mARkdown01.png">
 	</a>
 	<figcaption>
-		<b>OpenITI mARkdown</b>: three main sections of a document.
+		<b>OpenITI mARkdown</b>: the three main sections of a document.
 	</figcaption>
 </figure>
 
